@@ -1,4 +1,4 @@
-ame: Robot Framework CI
+name: Robot Framework CI
  
 on:
   push:
