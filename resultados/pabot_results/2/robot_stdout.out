@@ -1,0 +1,29 @@
+==============================================================================
+Suites
+==============================================================================
+Suites.Ui
+==============================================================================
+Suites.Ui.05 Login Ddt
+==============================================================================
+Usuario estandar                                                      | FAIL |
+No keyword with name 'Ingresar Credenciales' found.
+------------------------------------------------------------------------------
+Usuario bloqueado                                                     | FAIL |
+No keyword with name 'Ingresar Credenciales' found.
+------------------------------------------------------------------------------
+Clave incorrecta                                                      | FAIL |
+No keyword with name 'Ingresar Credenciales' found.
+------------------------------------------------------------------------------
+Usuario vacio                                                         | FAIL |
+No keyword with name 'Ingresar Credenciales' found.
+------------------------------------------------------------------------------
+Suites.Ui.05 Login Ddt                                                | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Suites.Ui                                                             | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Suites                                                                | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Output:  C:\Users\eduar\robotframework-lab\resultados\pabot_results\2\output.xml

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.14 on win32)" generated="2026-07-08T04:44:04.411870" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Ui" source="C:\Users\eduar\robotframework-lab\ui">
+<suite id="s1-s1-s1" name="05 Login Ddt" source="C:\Users\eduar\robotframework-lab\ui\05_login_ddt.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-07-08T04:44:04.917799" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-08T04:44:04.917269" elapsed="1.483741"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Usuario estandar" line="9">
+<kw name="Validar Intento De Login">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-07-08T04:44:06.403217" level="INFO">Opening url 'https://www.saucedemo.com'</msg>
+<arg>https://www.saucedemo.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-07-08T04:44:06.403010" elapsed="0.036867"/>
+</kw>
+<kw name="Ingresar Credenciales">
+<msg time="2026-07-08T04:44:06.442767" level="FAIL">No keyword with name 'Ingresar Credenciales' found.</msg>
+<arg>${usuario}</arg>
+<arg>${clave}</arg>
+<status status="FAIL" start="2026-07-08T04:44:06.442656" elapsed="0.000188">No keyword with name 'Ingresar Credenciales' found.</status>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${resultado}' == 'exito'</arg>
+<arg>Wait Until Page Contains</arg>
+<arg>Products</arg>
+<arg>ELSE</arg>
+<arg>Element Should Be Visible</arg>
+<arg>css:h3[data-test='error']</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2026-07-08T04:44:06.443121" elapsed="0.000046"/>
+</kw>
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<arg>exito</arg>
+<status status="FAIL" start="2026-07-08T04:44:06.402511" elapsed="0.040838">No keyword with name 'Ingresar Credenciales' found.</status>
+</kw>
+<status status="FAIL" start="2026-07-08T04:44:06.401459" elapsed="0.042172">No keyword with name 'Ingresar Credenciales' found.</status>
+</test>
+<test id="s1-s1-s1-t2" name="Usuario bloqueado" line="10">
+<kw name="Validar Intento De Login">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-07-08T04:44:06.445381" level="INFO">Opening url 'https://www.saucedemo.com'</msg>
+<arg>https://www.saucedemo.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-07-08T04:44:06.445085" elapsed="0.024137"/>
+</kw>
+<kw name="Ingresar Credenciales">
+<msg time="2026-07-08T04:44:06.471244" level="FAIL">No keyword with name 'Ingresar Credenciales' found.</msg>
+<arg>${usuario}</arg>
+<arg>${clave}</arg>
+<status status="FAIL" start="2026-07-08T04:44:06.471169" elapsed="0.000152">No keyword with name 'Ingresar Credenciales' found.</status>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${resultado}' == 'exito'</arg>
+<arg>Wait Until Page Contains</arg>
+<arg>Products</arg>
+<arg>ELSE</arg>
+<arg>Element Should Be Visible</arg>
+<arg>css:h3[data-test='error']</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2026-07-08T04:44:06.471509" elapsed="0.000038"/>
+</kw>
+<arg>locked_out_user</arg>
+<arg>secret_sauce</arg>
+<arg>error</arg>
+<status status="FAIL" start="2026-07-08T04:44:06.444565" elapsed="0.027129">No keyword with name 'Ingresar Credenciales' found.</status>
+</kw>
+<status status="FAIL" start="2026-07-08T04:44:06.444066" elapsed="0.027811">No keyword with name 'Ingresar Credenciales' found.</status>
+</test>
+<test id="s1-s1-s1-t3" name="Clave incorrecta" line="11">
+<kw name="Validar Intento De Login">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-07-08T04:44:06.472896" level="INFO">Opening url 'https://www.saucedemo.com'</msg>
+<arg>https://www.saucedemo.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-07-08T04:44:06.472780" elapsed="0.023573"/>
+</kw>
+<kw name="Ingresar Credenciales">
+<msg time="2026-07-08T04:44:06.498342" level="FAIL">No keyword with name 'Ingresar Credenciales' found.</msg>
+<arg>${usuario}</arg>
+<arg>${clave}</arg>
+<status status="FAIL" start="2026-07-08T04:44:06.498270" elapsed="0.000122">No keyword with name 'Ingresar Credenciales' found.</status>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${resultado}' == 'exito'</arg>
+<arg>Wait Until Page Contains</arg>
+<arg>Products</arg>
+<arg>ELSE</arg>
+<arg>Element Should Be Visible</arg>
+<arg>css:h3[data-test='error']</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2026-07-08T04:44:06.498599" elapsed="0.000043"/>
+</kw>
+<arg>standard_user</arg>
+<arg>clave_invalida</arg>
+<arg>error</arg>
+<status status="FAIL" start="2026-07-08T04:44:06.472470" elapsed="0.026335">No keyword with name 'Ingresar Credenciales' found.</status>
+</kw>
+<status status="FAIL" start="2026-07-08T04:44:06.472113" elapsed="0.026904">No keyword with name 'Ingresar Credenciales' found.</status>
+</test>
+<test id="s1-s1-s1-t4" name="Usuario vacio" line="12">
+<kw name="Validar Intento De Login">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-07-08T04:44:06.500171" level="INFO">Opening url 'https://www.saucedemo.com'</msg>
+<arg>https://www.saucedemo.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-07-08T04:44:06.500060" elapsed="0.032465"/>
+</kw>
+<kw name="Ingresar Credenciales">
+<msg time="2026-07-08T04:44:06.535424" level="FAIL">No keyword with name 'Ingresar Credenciales' found.</msg>
+<arg>${usuario}</arg>
+<arg>${clave}</arg>
+<status status="FAIL" start="2026-07-08T04:44:06.535320" elapsed="0.000167">No keyword with name 'Ingresar Credenciales' found.</status>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${resultado}' == 'exito'</arg>
+<arg>Wait Until Page Contains</arg>
+<arg>Products</arg>
+<arg>ELSE</arg>
+<arg>Element Should Be Visible</arg>
+<arg>css:h3[data-test='error']</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2026-07-08T04:44:06.535713" elapsed="0.000040"/>
+</kw>
+<arg>${EMPTY}</arg>
+<arg>secret_sauce</arg>
+<arg>error</arg>
+<status status="FAIL" start="2026-07-08T04:44:06.499574" elapsed="0.036339">No keyword with name 'Ingresar Credenciales' found.</status>
+</kw>
+<status status="FAIL" start="2026-07-08T04:44:06.499297" elapsed="0.036916">No keyword with name 'Ingresar Credenciales' found.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-08T04:44:06.537141" elapsed="2.247344"/>
+</kw>
+<status status="FAIL" start="2026-07-08T04:44:04.468981" elapsed="4.315694"/>
+</suite>
+<status status="FAIL" start="2026-07-08T04:44:04.467549" elapsed="4.318513"/>
+</suite>
+<status status="FAIL" start="2026-07-08T04:44:04.416079" elapsed="4.370597"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="0" fail="4" skip="0">Suites</stat>
+<stat name="Ui" id="s1-s1" pass="0" fail="4" skip="0">Suites.Ui</stat>
+<stat name="05 Login Ddt" id="s1-s1-s1" pass="0" fail="4" skip="0">Suites.Ui.05 Login Ddt</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-07-08T04:44:04.915416" level="ERROR">Error in file 'C:\Users\eduar\robotframework-lab\ui\05_login_ddt.robot' on line 3: Resource file 'login_page.resource' does not exist.</msg>
+</errors>
+</robot>
